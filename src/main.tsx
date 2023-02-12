@@ -34,7 +34,6 @@ function main() {
     .${triggerIconName} {
       width: 18px;
       height: 18px;
-      margin: 2px 0.4em 0 0.4em;
       background-color: #26a641;
       border-radius: 4px;
       border: 1px solid #eee;
@@ -44,7 +43,7 @@ function main() {
   logseq.App.registerUIItem("toolbar", {
     key: "heatmap-plugin-open",
     template: `
-    <a data-on-click="show">
+    <a data-on-click="show" class="button">
       <div class="${triggerIconName}"></div>
     </a>
   `,
